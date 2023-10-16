@@ -21,6 +21,10 @@ describe('pascals triangle test', ()=>{
     it('4 - row',()=>{
         mustBeRow(4, [1,4,6,4,1])
     })
+
+    it('9 - row',()=>{
+        mustBeRow(9, [1, 9, 36, 84, 126, 126, 84, 36, 9, 1])
+    })
     
     it('reject negative row index',()=>{
         strict.throws(()=>{
